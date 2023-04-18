@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Poppins:ital,wght@1,300&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Poppins:ital,wght@1,300;1,800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@600&family=Comfortaa:wght@500&family=Poppins:ital,wght@1,300;1,800&display=swap');
+.topnav  {
+    overflow: hidden;
+    border: hidden;
+}
+.topnav a {
+    float: left;
+    display: block;
+    color: red;
+    text-align: center;
+    padding: 14px 20px;
+    padding-left: 20px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.topnav a:hover {
+    background-color: black;
+    overflow: hidden;
+}
+/*.topnav a.active {
+    background-color: #2196F3;
+    color: white; 
+}*/
+/*====================================*/
+.search-container {
+    float:right;
+    padding-top: 20px;
+    padding-right: 20px;
+    
+}
+.search-container input[type=text]  {
+    padding-left: 8px;
+    font-size: 17px;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    border-color: red;
+}
+.search-container button {
+    background-color: red;
+    border-radius: 15px;
+    font-size: 17px;
+}
+.search-container button:hover {
+    background-color: rgb(54, 24, 24);
+    border: none;
+}
+/*=========================*/
+.dropdown button  {
+    background-color: rgb(19, 8, 8);
+    border: none;
+    padding-top: 10px;
+    color: red;
+    font-size: 20px;
+}
+.dropdown-menu {
+    padding-top: 25px;
+    background-color: rgb(203, 84, 84);
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+/*==============================*/
+.login {
+    text-decoration: none;
+    color:rgb(203, 84, 84);
+}
+.btn a:hover  {
+    color:rgb(233, 225, 225)
+
+}
+
+
+/*====================================*/
+.btn {
+    color: red;
+    background-color: rgb(43, 31, 31);
+    border: none;
+    padding-top: 15px;
+}
+.btn button:hover {
+    background-color: #ddd;
+    overflow: hidden;
+}
+
+.btn a:hover {  /*login içi için*/
+    color:rgb(233, 225, 225);
+}
+/*=======================0*/
+img {
+    border-radius: 15px;
+    /*margin-left: 15px;*/
+}
+/*======================================*/
+.overlay {
+    position: relative;
+}
+.overlayContent   {  
+    position: absolute;
+    background-color: rgb(29, 18, 18);
+    opacity: .0;
+    transition: all .3s ease;  /*değişimi 3sn de gerçekleştirir*/
+}
+/*.overlayContent   {  
+    position: absolute;
+    border-radius: 15px;
+    margin-left: 15px;
+    margin-right: 5px;
+    background-color: rgb(0, 76, 255);
+    opacity: 0.8;
+    transition: all .3s ease;  /*değişimi 3sn de gerçekleştirir*/
+
+.overlayUnder {  /*üstündeki örtünün tanımı*/
+    bottom: 0px;
+    left: 0px;  /*noktamın başlangıç noktasını belirlemeliyim*/
+    width: 100%;  
+    height: 0;
+}
+
+.overlay:hover .overlayUnder{  /*maus overlay üstüne geldiğinde overleft çalışacak*/
+    opacity: 0.90;
+    height: 100%;
+}
+.overlayText {
+    position: absolute;
+    color: black;
+    top:100%;
+    left: 30%;
+    font-size: 17px;
+    transform: translate(-50%, -100%);
+}
+.overlay .overlayText3 {
+    position: absolute;
+    color: rgb(51, 114, 65);
+    top: 101%;
+    left: -5%;
+    font-size: 17px;
+    font-weight: bolder;
+    transform: translate(0%, -20%);
+    font-family: 'Anuphan', sans-serif;
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Poppins', sans-serif;
+
+}
+.overlayText2 {
+    position: absolute;
+    color:black;
+    top: 101%;
+    left: -5%;
+    font-size: 17px;
+    font-weight: bolder;
+    font-family: 'Anuphan', sans-serif;
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Poppins', sans-serif;
+
+}
+/*==================DIRECT-------------*/
+.overlayDirect {  /*üstündeki örtünün tanımı*/
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.overlay:hover .overlayDirect{  /*maus overlay üstüne geldiğinde overleft çalışacak*/
+    opacity: 0.8;
+}
+/*====================Center CSS===========0000*/
+.overlayCenter {  /*üstündeki örtünün tanımı*/
+    top: 50%;
+    left: 50%;  /*noktamın başlangıç noktasını belirlemeliyim*/
+    width: 0;  
+    height: 0;
+}
+
+.overlay:hover .overlayCenter {  /*maus overlay üstüne geldiğinde overleft çalışacak*/
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+/*============================================*/
+.container_top {
+    position:relative;
+    padding-left: 25px;
+    background-color: rgb(43,31,31);
+}
+
+.icon-bar {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
+  .icon-bar a {
+    display: block; /* Make the links appear below each other instead of side-by-side */
+    text-align: center; /* Center-align text */
+    padding: 20px; /* Add some padding */
+    transition: all 0.3s ease; /* Add transition for hover effects */
+    color: white; /* White text color */
+    font-size: 30px; /* Increased font-size */
+  }
+  
+  .icon-bar a:hover {
+    background-color:red; /* Add a hover color */
+  }
+/*=============================================*/
+.movie_type  {
+    color: red;
+    font-size: 20px;
+    padding-top: 15px;
+}
+.line {
+    border: 5px solid red;
+}
+
+/*action.html======================*/
+
+.movie_type {
+    margin-top: 45px; 
+    margin-left: 45px;
+    font-size: 35px;
+    color: white;
+}
+
+.overlay img:hover  { /*bu kısım üstüne bastığında hafif yan kaysın diye bu 3lü*/
+    transform: scale(1.05);
+}
+
+.container {
+    position: relative;
+}
+
+.container p {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    padding-left: 10px;
+    color: white;
+    font-size: 18px;
+    font-family: 'Anuphan', sans-serif;
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Poppins', sans-serif;
+}  
+
+.overlayText2:hover {
+    transform: scale(1.05);
+}
+/*===============================================*/
+
+@media (max-width: 500px)  {
+    .overlay  {
+        padding-left: 35px;
+    }
+}

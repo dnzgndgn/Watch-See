@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Poppins:ital,wght@1,300&display=swap');
+* {
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Poppins', sans-serif;
+}
+.topnav  {
+    overflow: hidden;
+    border: hidden;
+}
+.topnav a {
+    float: left;
+    display: block;
+    color: rgb(23, 7, 7);
+    text-align: center;
+    padding: 14px 20px;
+    padding-left: 20px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.topnav a:hover {
+    background-color: rgb(168, 53, 53);
+    overflow: hidden;
+}
+/*.topnav a.active {
+    background-color: #2196F3;
+    color: white; 
+}*/
+/*====================================*/
+.search-container {
+    float:right;
+    padding-top: 20px;
+    padding-right: 20px;
+    
+}
+.search-container input[type=text]  {
+    padding-left: 8px;
+    font-size: 17px;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    border-color: red;
+}
+.search-container button {
+    background-color: red;
+    border-radius: 15px;
+    font-size: 17px;
+}
+.search-container button:hover {
+    background-color: rgb(54, 24, 24);
+    border: none;
+}
+
+.d-flex input[type="search"] {
+    color:rgb(255, 174, 0);
+    background-color: rgb(79, 127, 127);
+}
+/*=========================*/
+.dropdown button  {
+    background-color: rgb(19, 8, 8);
+    border: none;
+    padding-top: 10px;
+    color: red;
+    font-size: 20px;
+}
+.dropdown-menu {
+    padding-top: 25px;
+    background-color: yellow;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+/*==============================*/
+.login {
+    text-decoration: none;
+    color:rgb(203, 84, 84);
+}
+.btn a:hover  {
+    color:rgb(233, 225, 225)
+
+}
+/*=====================================*/
+
+.dropdown {
+    position: sticky;
+    top: 0;
+}
+
+
+/*====================================*/
+.btn {
+    color: red;
+    background-color: rgb(43, 31, 31);
+    border: none;
+    padding-top: 15px;
+}
+.btn button:hover {
+    background-color: #ddd;
+    overflow: hidden;
+}
+
+.btn a:hover {  /*login içi için*/
+    color:rgb(233, 225, 225);
+}
+/*=======================0*/
+img {
+    position: relative;
+}
+/*======================================*/
+.overlay {
+    position: relative;
+}
+
+.overlayContent   {  
+    position: absolute;
+    background-color: rgb(61, 58, 58);
+    opacity: .0;
+    transition: all .3s ease;  /*değişimi 3sn de gerçekleştirir*/
+}
+.overlayLeft {  /*üstündeki örtünün tanımı*/
+    top: 0px;
+    left: 0px;
+    width: 0;  /*width:0 dan 100'e 3sn de bir çıkıyoraşağıda 100 dedik*/
+    height: 100%;
+}
+
+.overlay:hover .overlayLeft{  /*maus overlay üstüne geldiğinde overleft çalışacak*/
+    opacity: 0.8;
+    width: 50%;
+}
+
+.overlayText {
+    position: absolute;
+    color:rgb(185, 204, 183);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/*============================================*/
+.container_top {
+    position:relative;
+    padding-left: 25px;
+    background-color: rgb(43,31,31);
+}
+
+.icon-bar {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
+  .icon-bar a {
+    display: block; /* Make the links appear below each other instead of side-by-side */
+    text-align: center; /* Center-align text */
+    padding: 20px; /* Add some padding */
+    transition: all 0.3s ease; /* Add transition for hover effects */
+    color: white; /* White text color */
+    font-size: 30px; /* Increased font-size */
+  }
+  
+  .icon-bar a:hover {
+    background-color:red; /* Add a hover color */
+  }
+/*=============================================*/
+.movie_type  {
+    color: red;
+    font-size: 20px;
+    padding-top: 15px;
+}
+.line {
+    border: 5px solid red;
+}
+
+@media (max-width: 500px)  {
+    .overlay  {
+        padding-left: 35px;
+    }
+}
