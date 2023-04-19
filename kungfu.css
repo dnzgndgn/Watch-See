@@ -188,3 +188,13 @@ body {
     background-size: cover;
     background-image: linear-gradient(rgba(245, 41, 23, 0.587),rgba(1, 13, 50, 0.8)) ,url(https://images-na.ssl-images-amazon.com/images/S/pv-target-images/c843a4223d5315c699884ec186312b5681a621821b306fda8a75a306b1b06573._RI_.jpg);
 }
+
+@media (max-width: 500px)  {
+    .card  {
+        margin-left: 85px;
+    }
+
+    .d-flex input[type="search"] {
+        width: 115px;
+    }
+}
