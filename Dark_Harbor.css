@@ -188,3 +188,12 @@ body {
     background-size: cover;
     background-image: linear-gradient(rgba(245, 41, 23, 0.587),rgba(1, 13, 50, 0.8)) ,url(https://assets.mubicdn.net/images/film/57725/image-w1280.jpg?1445953026);
 }
+@media (max-width: 500px)  {
+    .card  {
+        margin-left: 85px;
+    }
+
+    .d-flex input[type="search"] {
+        width: 115px;
+    }
+}
