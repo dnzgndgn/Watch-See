@@ -177,4 +177,7 @@ img {
     .overlay  {
         padding-left: 35px;
     }
+    .d-flex input[type="search"] {
+        width: 115px;
+    }
 }
