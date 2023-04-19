@@ -189,3 +189,13 @@ body {
     background-image: linear-gradient(rgba(245, 41, 23, 0.587),rgba(1, 13, 50, 0.8)) ,url(https://www.eyeforfilm.co.uk/images/newsite/NeverLetGo-AngelaDixon_600.jpg);
 }
 
+@media (max-width: 500px)  {
+    .card  {
+        margin-left: 85px;
+    }
+
+    .d-flex input[type="search"] {
+        width: 115px;
+    }
+}
+
