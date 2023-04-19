@@ -187,4 +187,14 @@ body {
     .container .col-lg-7 {
         width: 200px;
     }
+} */
+
+@media (max-width: 500px)  {
+    .card  {
+        margin-left: 85px;
+    }
+
+    .d-flex input[type="search"] {
+        width: 115px;
+    }
 }
